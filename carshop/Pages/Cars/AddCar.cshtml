@@ -1,0 +1,38 @@
+﻿@using (Html.BeginForm("opresult", "cars", FormMethod.Post)) {
+    <div class="form-group">
+        <label for="Mail">Mail:</label>
+        <input type="email" name="Mail" id="Mail" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="Password">Password:</label>
+        <input type="password" name="Password" id="Password" class="form-control" />
+    </div>
+
+
+    <div class="form-group">
+        <label for="name">Brand:</label>
+        <input type="text" name="Brand" id="Brand" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="Body">Body:</label>
+        <input type="text" name="Body" id="Body" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="Type">Type:</label>
+        <select name="Type" id="Type" class="form-control">
+            <option value="Jeep">Jeep</option>
+            <option value="Truck">Truck</option>
+            <option value="Sedan">Sedan</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="Price">Price:</label>
+        <input type="text" name="Price" id="Price" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Отправить</button>
+}
